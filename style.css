@@ -2,71 +2,146 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
+
+
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  font-size: 23px;
-  background: blue;
-  color: white;
-  font-family: sans-serif;
-  height: 70px;
+  padding: 20px;
+  position: relative;
 }
+
 .right-nav {
   display: flex;
   align-items: center;
   gap: 40px;
-}
-.right-nav p {
-  cursor: pointer;
-}
-button {
-  width: 120px;
-  height: 40px;
-  border-radius: 10px;
-  border: none;
-  background: red;
-  color: white;
-  font-size: 13px;
-  font-weight: 700;
-  cursor: pointer;
-  display: none;
-}
-.container{
-  display: grid;
-  gap: 40px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 30px;
-}
-.card{
-  width: 300px;
-  height: 300px;
-  border-radius: 50px;
-  background: red;
-  margin: auto;
 
 }
-@media screen and (max-width :450px){
- .right-nav p{
-  display: none;
- }
- .right-nav button{
-  display: block;
- }
- nav{
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  width: 450px;
-  overflow: hidden;
- }
- .container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
- }
- .card{
-  width: 200px;
-height: 200px;
- }
+
+.images {
+  top: 0;
+
 }
+
+.right-nav button {
+  width: 111px;
+  height: 36px;
+  background: rgba(21, 105, 99, 1);
+  color: white;
+  border: none;
+}
+
+.right-nav p {
+  color: rgba(21, 105, 99, 1);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.card-one  {
+  width: 560px;
+  padding: 40px;
+
+}
+.card-one> h1{
+  font-size: 68px;
+  color: rgba(21, 105, 99, 1);
+font-weight: 500;
+}
+.card-one p{
+  font-size: 18px;
+  margin-top: 25px;
+  color: rgba(44, 21, 0, 1);
+}
+
+
+.btn-main{
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin-top: 50px;
+}
+
+.btn-main .one h1{
+  font-size: 28px;
+}
+
+
+.two{
+  background: rgba(21, 105, 99, 1);
+color: white;
+padding: 20px;
+
+}
+
+.two h1{
+  font-size: 28px;
+}
+.two p{
+  font-size: 28px;
+  color: rgba(242, 242, 242, 1);
+
+}
+
+.images{
+  margin-top: -77px;
+}
+
+
+@media screen and (max-width: 430px){
+  .right-nav img{
+    display: none;
+  }
+  .images{
+    width: 430px;
+    height: 656px;
+    margin-top: -155px;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .two p{
+    font-size: 18px;
+    color: rgba(242, 242, 242, 1);
+  
+  }
+  .card-one h1{
+    font-size: 28px;
+  }
+  .card-one p{
+    font-size: 12px;
+  }
+  .card-one{
+    width: 350px;
+  }
+  .two{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .two h1{
+    font-size: 15px;
+  }
+  .one{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .one h1{
+    font-size: 15px;
+  }
+}
+
